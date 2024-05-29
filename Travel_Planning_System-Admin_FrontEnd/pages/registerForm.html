@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Planning System</title>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="registerForm">
+        <h1>Register</h1>
+        <div class="profileIMG-wrapper">
+          <img src="../assets/images/user.png" alt="profile Image" id="photo" />
+          <input type="file" id="adminIMG" />
+          <label for="adminIMG" id="uploadbtn"
+            ><i class="bx bxs-camera"></i
+          ></label>
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            name="adminName"
+            id="adminName"
+            placeholder="User Name"
+            required
+          />
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="email"
+            name="adminEmail"
+            id="adminEmail"
+            placeholder="Email"
+            required
+          />
+          <i class="bx bxs-envelope"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            name="adminPassword"
+            id="adminPassword"
+            placeholder="Password"
+            required
+          />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+
+        <button type="button" class="login-btn" id="saveAdminBtn">
+          Register
+        </button>
+
+        <div class="register-link">
+          <p>
+            Already you have an account? <a href="../index.html">Sign in</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="../assets/JQuery/jquery-3.6.4.min.js"></script>
+    <script src="../assets/js/adminRegister.js"></script>
+  </body>
+</html>

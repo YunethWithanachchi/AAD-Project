@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Planning System</title>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="loginForm">
+        <h1>Login</h1>
+        <div class="input-box email">
+          <input
+            type="email"
+            name="adminEmail"
+            id="adminEmail"
+            placeholder="Email"
+            required
+            class="form-control"
+          />
+          <i class="bx bxs-envelope"></i>
+          <p class="error-txt" id="emailError">Email Can't be blank</p>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            name="adminPassword"
+            id="adminPassword"
+            placeholder="Password"
+            required
+            class="form-control"
+          />
+          <i class="bx bxs-lock-alt"></i>
+          <p class="error-txt" id="passwordError">Password Can't be blank</p>
+        </div>
+
+        <button type="button" class="login-btn" id="adminLoginBtn">
+          Login
+        </button>
+
+        <div class="register-link">
+          <p>
+            Don't have an account?
+            <a href="pages/registerForm.html">Register</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="assets/JQuery/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/adminLogin.js"></script>
+  </body>
+</html>
